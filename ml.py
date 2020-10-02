@@ -99,7 +99,7 @@ processed_user_input = data_preprocessor(user_input_df)
 st.subheader('Do Your Thing!')
 
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 prediction = model.predict(processed_user_input)
 prediction_proba = model.predict_proba(processed_user_input)
